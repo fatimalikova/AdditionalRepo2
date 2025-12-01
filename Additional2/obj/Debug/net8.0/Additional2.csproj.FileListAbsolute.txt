@@ -12,3 +12,4 @@ C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\Additional2
 C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\Additional2\obj\Debug\net8.0\Additional2.pdb
 C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\Additional2\obj\Debug\net8.0\Additional2.genruntimeconfig.cache
 C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\Additional2\obj\Debug\net8.0\ref\Additional2.dll
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\Additional2\obj\Debug\net8.0\Additional2.sourcelink.json

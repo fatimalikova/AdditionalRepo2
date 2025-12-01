@@ -24,6 +24,8 @@
             Console.WriteLine(fruits.Capacity);
             Console.WriteLine(fruits.Count);
             Console.WriteLine(fruits.IndexOf("Banana"));
+            Console.WriteLine(fruits.Contains("Fig"));
+            Console.WriteLine(fruits.Exists(x=>x=="Grape"));
             string[] colorsArray = fruits.ToArray();
 
             foreach (string color in fruits)
