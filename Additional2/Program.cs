@@ -45,13 +45,28 @@
             //int day = 4;
             //Days today = (Days)day;
             //Console.WriteLine(today);
-            Days days = Days.Wednesday;
-            if (days == Days.Wednesday)
+            //Days days = Days.Wednesday;
+            //if (days == Days.Wednesday)
+            //{
+            //    Console.WriteLine("Today is Wednesday");
+            //}
+            //int friday = DaysStruct.Friday;
+            //Console.WriteLine(friday);
+
+            Animal animal = new Dog();
+            animal.Speak();
+
+            List<Animal> animals = new List<Animal>();
+            animals.Add(new Dog { Name = "Buddy", Age = 3, Breed = "Golden Retriever" });
+            animals.Add(new Animal { Name = "Mittens", Age = 2 });
+            animals.Add(new Dog { Name = "Max", Age = 5, Breed = "German Shepherd" });
+            animals.Add(new Animal { Name = "Whiskers", Age = 4 });
+
+            foreach (var a in animals)
             {
-                Console.WriteLine("Today is Wednesday");
+                Console.WriteLine($"Name: {a.Name}, Age: {a.Age}");
+                a.Speak();
             }
-            int friday = DaysStruct.Friday;
-            Console.WriteLine(friday);
 
 
 
@@ -60,6 +75,27 @@
         
     }
 
+    class Animal
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+
+        public virtual void Speak()
+        {
+            Console.WriteLine("The animal makes a sound.");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public string Breed { get; set; }
+        public override void Speak()
+        {
+            Console.WriteLine("The dog barks.");
+        }
+
+
+    }
     public enum Days
     {
         Sunday = 1,
