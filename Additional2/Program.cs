@@ -65,10 +65,28 @@
             foreach (var a in animals)
             {
                 Console.WriteLine($"Name: {a.Name}, Age: {a.Age}");
-                a.Speak();
+                //a.Speak();
             }
 
-
+            List<T> GetAnimalsOfType<T>(List<Animal> animals) where T : Animal
+            {
+                List<T> result = new List<T>();
+                foreach (var animal in animals)
+                {
+                    if (animal is T tAnimal)
+                    {
+                        result.Add(tAnimal);
+                    }
+                }
+                return result;
+            }
+            List<Dog> dogs = GetAnimalsOfType<Dog>(animals);
+            Console.WriteLine("\nDogs in the list:");
+            foreach (var dog in dogs)
+            {
+                Console.WriteLine($"Name: {dog.Name}, Age: {dog.Age}, Breed: {dog.Breed}");
+            }
+            Console.WriteLine();
 
         }
 
