@@ -53,41 +53,48 @@
             //int friday = DaysStruct.Friday;
             //Console.WriteLine(friday);
 
-            Animal animal = new Dog();
-            animal.Speak();
+            //Animal animal = new Dog();
+            //animal.Speak();
 
-            List<Animal> animals = new List<Animal>();
-            animals.Add(new Dog { Name = "Buddy", Age = 3, Breed = "Golden Retriever" });
-            animals.Add(new Animal { Name = "Mittens", Age = 2 });
-            animals.Add(new Dog { Name = "Max", Age = 5, Breed = "German Shepherd" });
-            animals.Add(new Animal { Name = "Whiskers", Age = 4 });
+            //List<Animal> animals = new List<Animal>();
+            //animals.Add(new Dog { Name = "Buddy", Age = 3, Breed = "Golden Retriever" });
+            //animals.Add(new Animal { Name = "Mittens", Age = 2 });
+            //animals.Add(new Dog { Name = "Max", Age = 5, Breed = "German Shepherd" });
+            //animals.Add(new Animal { Name = "Whiskers", Age = 4 });
 
-            foreach (var a in animals)
-            {
-                Console.WriteLine($"Name: {a.Name}, Age: {a.Age}");
-                //a.Speak();
-            }
+            //foreach (var a in animals)
+            //{
+            //    Console.WriteLine($"Name: {a.Name}, Age: {a.Age}");
+            //    //a.Speak();
+            //}
 
-            List<T> GetAnimalsOfType<T>(List<Animal> animals) where T : Animal
-            {
-                List<T> result = new List<T>();
-                foreach (var animal in animals)
-                {
-                    if (animal is T tAnimal)
-                    {
-                        result.Add(tAnimal);
-                    }
-                }
-                return result;
-            }
-            List<Dog> dogs = GetAnimalsOfType<Dog>(animals);
-            Console.WriteLine("\nDogs in the list:");
-            foreach (var dog in dogs)
-            {
-                Console.WriteLine($"Name: {dog.Name}, Age: {dog.Age}, Breed: {dog.Breed}");
-            }
-            Console.WriteLine();
+            //List<T> GetAnimalsOfType<T>(List<Animal> animals) where T : Animal
+            //{
+            //    List<T> result = new List<T>();
+            //    foreach (var animal in animals)
+            //    {
+            //        if (animal is T tAnimal)
+            //        {
+            //            result.Add(tAnimal);
+            //        }
+            //    }
+            //    return result;
+            //}
+            //List<Dog> dogs = GetAnimalsOfType<Dog>(animals);
+            //Console.WriteLine("\nDogs in the list:");
+            //foreach (var dog in dogs)
+            //{
+            //    Console.WriteLine($"Name: {dog.Name}, Age: {dog.Age}, Breed: {dog.Breed}");
+            //}
+            //Console.WriteLine();
 
+
+            MysStrList myList = new MysStrList();
+            myList.Add("Hello");
+            myList.Add("World");
+            Console.WriteLine($"Count: {myList.Count}");
+            myList.GetAll();
+            Console.WriteLine(myList.Get(0));
         }
 
         
