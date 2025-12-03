@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Additional2
 {
-    internal class MysStrList
+    internal class MyIntList
     {
 
-        private string[] _items;
+        private int[] _items;
 
-        public MysStrList()
+        public MyIntList()
         {
-            _items = new string[0];
+            _items = new int[0];
         }
 
-        public void Add(string item)
+        public void Add(int item)
         {
             Array.Resize(ref _items, _items.Length + 1);
             _items[_items.Length - 1] = item;
@@ -26,7 +26,7 @@ namespace Additional2
         public int Count { get { return _items.Length; } }
         public void Clear()
         {
-            _items = new string[0];
+            _items = new int[0];
         }
 
         public void GetAll()
@@ -37,7 +37,7 @@ namespace Additional2
             }
         }
 
-        public string Get(int index)
+        public int Get(int index)
         {
             if (index < 0 || index >= _items.Length)
             {

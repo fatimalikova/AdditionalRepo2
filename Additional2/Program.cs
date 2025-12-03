@@ -89,9 +89,13 @@
             //Console.WriteLine();
 
 
-            MysStrList myList = new MysStrList();
-            myList.Add("Hello");
-            myList.Add("World");
+            MyIntList myList = new MyIntList();
+            //myList.Add("Hello");
+            //myList.Add("World");
+            myList.Add(10);
+            myList.Add(20);
+            myList.Add(30);
+            myList.Add(40);
             Console.WriteLine($"Count: {myList.Count}");
             myList.GetAll();
             Console.WriteLine(myList.Get(0));
