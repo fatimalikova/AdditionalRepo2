@@ -1,4 +1,6 @@
-﻿namespace Additional2
+﻿using Additional2.Models;
+
+namespace Additional2
 {
     internal class Program
     {
@@ -41,7 +43,7 @@
             //    }
             //}
 
-            
+
             //int day = 4;
             //Days today = (Days)day;
             //Console.WriteLine(today);
@@ -89,19 +91,65 @@
             //Console.WriteLine();
 
 
-            MyIntList myList = new MyIntList();
-            //myList.Add("Hello");
-            //myList.Add("World");
+            //MyIntList myList = new MyIntList();
+            ////myList.Add("Hello");
+            ////myList.Add("World");
+            //myList.Add(10);
+            //myList.Add(20);
+            //myList.Add(30);
+            //myList.Add(40);
+            //Console.WriteLine($"Count: {myList.Count}");
+            //myList.GetAll();
+            //Console.WriteLine(myList.Get(0));
+
+
+
+            //Student student = new Student();
+            //student.Add(new Student { Name = "Alice", Age = 20 });
+            //student.Add(new Student { Name = "Bob", Age = 22 });
+            //Console.WriteLine($"Student Count: {student.Count}");
+            //student.GetAll();
+            //Console.WriteLine(student.Get(0));
+
+
+
+            ////MyList<string> stringList = new MyList<string>();
+            //MyList<int> intList = new MyList<int>();
+            ////stringList.Add("Hello");
+            //intList.Add(100);
+            //intList.Add(200);
+            //Console.WriteLine($"Count: {intList.Count}");
+            //intList.GetAll();
+
+            //MyList<Student> studentList = new MyList<Student>();
+            //studentList.Add(new Student { Name = "Charlie", Age = 23 });
+            //Console.WriteLine($"Student List Count: {studentList.Count}");
+            //studentList.GetAll();
+
+            //List<string> genericList = new List<string>();
+            //genericList.Add("Sample");
+            //genericList.Add("Test");
+            //Console.WriteLine($"Generic List Count: {genericList.Count}");
+
+            //Student[] students = new Student[]
+            //{
+            //    new Student { Id = 1, Name = "Alice", Age = 20 },
+            //    new Student { Id = 2, Name = "Bob", Age = 22 },
+            //    new Student { Id = 3, Name = "Charlie", Age = 23 }
+            //};
+            //Array.Sort(students);
+
+
+            MyList<int, object> myList = new MyList<int, object>();
             myList.Add(10);
             myList.Add(20);
-            myList.Add(30);
-            myList.Add(40);
             Console.WriteLine($"Count: {myList.Count}");
             myList.GetAll();
-            Console.WriteLine(myList.Get(0));
+
+
         }
 
-        
+
     }
 
     class Animal
