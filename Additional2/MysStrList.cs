@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Additional2
 {
-    internal class MyList<T,U>
+    internal class MyList<T>
       // where T : class
       // where T : struct
       // where T : new() // T must have a parameterless constructor
       // where T : IComparable<T> // T must implement IComparable<T>
       // where T : BaseEntity
       // where T : U
-      where T : class, U, new()
+      //where T : class, U, new()
     {
 
         private T[] _items;
