@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 namespace Additional2
 {
     internal class MyList<T>
-      // where T : class
-      // where T : struct
-      // where T : new() // T must have a parameterless constructor
-      // where T : IComparable<T> // T must implement IComparable<T>
-      // where T : BaseEntity
-      // where T : U
-      //where T : class, U, new()
+    // where T : class
+    // where T : struct
+    // where T : new() // T must have a parameterless constructor
+    // where T : IComparable<T> // T must implement IComparable<T>
+    // where T : BaseEntity
+    // where T : U
+    //where T : class, U, new()
     {
 
         private T[] _items;
@@ -52,6 +52,19 @@ namespace Additional2
                 throw new IndexOutOfRangeException("Index is out of range.");
             }
             return _items[index];
+        }
+
+        public T this[int index]
+        {
+            get { return Get(index); }
+            set
+            {
+                if (index < 0 || index >= _items.Length)
+                {
+                    throw new IndexOutOfRangeException("Index is out of range.");
+                }
+                _items[index] = value;
+            }
         }
     }
 }

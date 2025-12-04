@@ -147,6 +147,11 @@ namespace Additional2
             Console.WriteLine($"First Student: Name={firstStudent.Name}, Age={firstStudent.Age}");
             Console.WriteLine($"Student List Count: {studentList.Count}");
             studentList.GetAll();
+            studentList.Clear();
+            Console.WriteLine($"Student List Count after Clear: {studentList.Count}");
+            //studentList.index = 0;
+
+
             //MyList<int> myList = new MyList<int, object>();
             //myList.Add(10);
             //myList.Add(20);
