@@ -140,11 +140,16 @@ namespace Additional2
             //Array.Sort(students);
 
 
-            MyList<int, object> myList = new MyList<int, object>();
-            myList.Add(10);
-            myList.Add(20);
-            Console.WriteLine($"Count: {myList.Count}");
-            myList.GetAll();
+            MyList<int> list = new List<int>();
+            list.Add(1);
+            list.Add(2);
+            Console.WriteLine($"Count: {list.Count}");
+            list.GetAll();
+            //MyList<int> myList = new MyList<int, object>();
+            //myList.Add(10);
+            //myList.Add(20);
+            //Console.WriteLine($"Count: {myList.Count}");
+            //myList.GetAll();
 
 
         }
