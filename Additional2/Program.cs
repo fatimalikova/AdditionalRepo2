@@ -140,15 +140,17 @@ namespace Additional2
             //Array.Sort(students);
 
 
-            MyList<Student> studentList = new();
-            studentList.Add(new Student { Name = "David", Age = 24 });
-            studentList.Add(new Student { Name = "Eva", Age = 21 });
-            Student firstStudent = studentList.Get(0);
-            Console.WriteLine($"First Student: Name={firstStudent.Name}, Age={firstStudent.Age}");
-            Console.WriteLine($"Student List Count: {studentList.Count}");
-            studentList.GetAll();
-            studentList.Clear();
-            Console.WriteLine($"Student List Count after Clear: {studentList.Count}");
+            //MyList<Student> studentList = new();
+            //studentList.Add(new Student { Name = "David", Age = 24 });
+            //studentList.Add(new Student { Name = "Eva", Age = 21 });
+            //Student firstStudent = studentList.Get(0);
+            //Console.WriteLine($"First Student: Name={firstStudent.Name}, Age={firstStudent.Age}");
+            //Console.WriteLine($"Student List Count: {studentList.Count}");
+            //studentList.GetAll();
+            //studentList.Clear();
+            //Console.WriteLine($"Student List Count after Clear: {studentList.Count}");
+
+
             //studentList.index = 0;
 
 
@@ -159,10 +161,32 @@ namespace Additional2
             //myList.GetAll();
 
 
+
+
+
+
+            Person record = new Person("John", "Doe");
+            Console.WriteLine($"First Name: {record.FirstName}, Last Name: {record.LastName}");
+
+            record.Deconstruct(out string firstName, out string lastName);
+            Person record2 = record with { LastName = "Smith" };
+            Console.WriteLine($"First Name: {record2.FirstName}, Last Name: {record2.LastName}");
+
+            Person record3 = new Person("John", "Doe");
+            Console.WriteLine($"record equals record3: {record.Equals(record3)}");
+
         }
 
 
     }
+
+
+
+
+    record Person (string FirstName, string LastName);
+
+
+
 
     class Animal
     {
