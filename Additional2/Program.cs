@@ -163,72 +163,82 @@ namespace Additional2
 
 
 
+            //Person record = new Person("John", "Doe");
+            //Console.WriteLine($"First Name: {record.FirstName}, Last Name: {record.LastName}");
 
+            //record.Deconstruct(out string firstName, out string lastName);
+            //Person record2 = record with { LastName = "Smith" };
+            //Console.WriteLine($"First Name: {record2.FirstName}, Last Name: {record2.LastName}");
 
-            Person record = new Person("John", "Doe");
-            Console.WriteLine($"First Name: {record.FirstName}, Last Name: {record.LastName}");
+            //Person record3 = new Person("John", "Doe");
+            //Console.WriteLine($"record equals record3: {record.Equals(record3)}");
 
-            record.Deconstruct(out string firstName, out string lastName);
-            Person record2 = record with { LastName = "Smith" };
-            Console.WriteLine($"First Name: {record2.FirstName}, Last Name: {record2.LastName}");
+            Items item = new Items();
+            string colorName = Console.ReadLine();
+            if (colorName != null)
+            {
+                Color color = (Color)Enum.Parse(typeof(Color), colorName, true);
+                Console.WriteLine($"Color value: {(int)color}");
+            }
 
-            Person record3 = new Person("John", "Doe");
-            Console.WriteLine($"record equals record3: {record.Equals(record3)}");
 
         }
 
 
-    }
 
-
-
-
-    record Person (string FirstName, string LastName);
-
-
-
-
-    class Animal
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-
-        public virtual void Speak()
+        enum Color
         {
-            Console.WriteLine("The animal makes a sound.");
+            Red = 1,
+            Green,
+            Blue
         }
-    }
+        record Person(string FirstName, string LastName);
 
-    class Dog : Animal
-    {
-        public string Breed { get; set; }
-        public override void Speak()
+
+
+
+        class Animal
         {
-            Console.WriteLine("The dog barks.");
+            public string Name { get; set; }
+            public int Age { get; set; }
+
+            public virtual void Speak()
+            {
+                Console.WriteLine("The animal makes a sound.");
+            }
         }
 
+        class Dog : Animal
+        {
+            public string Breed { get; set; }
+            public override void Speak()
+            {
+                Console.WriteLine("The dog barks.");
+            }
 
-    }
-    public enum Days
-    {
-        Sunday = 1,
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday
 
-    }
+        }
+        public enum Days
+        {
+            Sunday = 1,
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday
 
-    public struct DaysStruct
-    {
-        public const int Sunday = 1;
-        public const int Monday = 2;
-        public const int Tuesday = 3;
-        public const int Wednesday = 4;
-        public const int Thursday = 5;
-        public const int Friday = 6;
-        public const int Saturday = 7;
+        }
+
+        public struct DaysStruct
+        {
+            public const int Sunday = 1;
+            public const int Monday = 2;
+            public const int Tuesday = 3;
+            public const int Wednesday = 4;
+            public const int Thursday = 5;
+            public const int Friday = 6;
+            public const int Saturday = 7;
+        }
     }
 }
