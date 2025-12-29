@@ -1,0 +1,15 @@
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\bin\Debug\net8.0\LIST.exe
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\bin\Debug\net8.0\LIST.deps.json
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\bin\Debug\net8.0\LIST.runtimeconfig.json
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\bin\Debug\net8.0\LIST.dll
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\bin\Debug\net8.0\LIST.pdb
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.AssemblyInfoInputs.cache
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.AssemblyInfo.cs
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.csproj.CoreCompileInputs.cache
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.sourcelink.json
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.dll
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\refint\LIST.dll
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.pdb
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\LIST.genruntimeconfig.cache
+C:\Users\fmeli\OneDrive\Desktop\Code Academy\Additional2\Additional2\LIST\obj\Debug\net8.0\ref\LIST.dll

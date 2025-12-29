@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{902E3440-AF48-465D-BCC0-4D0DCCF8C92E}|LIST\\LIST.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{902E3440-AF48-465D-BCC0-4D0DCCF8C92E}|LIST\\LIST.csproj|solutionrelative:list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\additional2\\mysstrlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|solutionrelative:additional2\\mysstrlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\additional2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|solutionrelative:additional2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\additional2\\models\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|solutionrelative:additional2\\models\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\additional2\\mysstrlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|solutionrelative:additional2\\mysstrlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\additional2\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\LIST\\Program.cs",
+              "RelativeDocumentMoniker": "LIST\\Program.cs",
+              "ToolTip": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\LIST\\Program.cs*",
+              "RelativeToolTip": "LIST\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T08:42:08.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Items.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\Models\\Items.cs",
               "RelativeDocumentMoniker": "Additional2\\Models\\Items.cs",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Additional2\\Models\\Items.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T16:27:14.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T16:27:14.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\Models\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Additional2\\Models\\BaseEntity.cs",
@@ -59,32 +75,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MysStrList.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\MysStrList.cs",
               "RelativeDocumentMoniker": "Additional2\\MysStrList.cs",
               "ToolTip": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\MysStrList.cs",
               "RelativeToolTip": "Additional2\\MysStrList.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAswEQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T15:26:47.336Z"
+              "WhenOpened": "2025-12-03T15:26:47.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\Program.cs",
               "RelativeDocumentMoniker": "Additional2\\Program.cs",
               "ToolTip": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\Program.cs",
               "RelativeToolTip": "Additional2\\Program.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAvwPUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:20:35.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T19:20:35.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Additional2\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Additional2\\Models\\Student.cs",
