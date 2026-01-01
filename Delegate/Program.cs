@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
 namespace Delegate
 {
@@ -12,10 +13,8 @@ namespace Delegate
             //SumOfNumbers(delegate (int s) { return s % 2 == 1; },
             //    1, 2, 3, 4, 5, 6);
 
-            Student student1 = new Student(1, "John", "Doe", 20);
-            Student student2 = new Student(2, "Jane", "SmithWithAVeryLongSurname", 17);
-            ValidateStudent(student1);
-            ValidateStudent(student2);
+            Student student = new Student(1, "Johnathan", "DoeSurnameExceedingMax", 16);
+            Validate(student);
 
             //NumberMethod method = IsEven;
             //method += IsOdd;
@@ -41,6 +40,30 @@ namespace Delegate
                 }
             }
         }
+
+        public static void Validate(object obj)
+        {
+            Type type = obj.GetType();
+            var properties = type.GetProperties();
+            foreach (var property in properties)
+            {
+                var atts = property.GetCustomAttributes(typeof(MyMaxLengthAttribute), true);
+                var value = property.GetValue(obj);
+                foreach (var attObj in atts)
+                {
+                    if (attObj is MyMaxLengthAttribute att && value is string strValue)
+                    {
+                        if (strValue.Length > att.MaxLength)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine($"{property.Name} maksimum uzunlugu kecir");
+                            Console.ResetColor();
+                        }
+                    }
+                }
+            }
+        }
+        
 
         private static bool IsEven(int number)
         {
@@ -71,6 +94,8 @@ namespace Delegate
     class Student
     {
         public int Id { get; set; }
+        [Required]
+        [MyMaxLength(5)]
         public string Name { get; set; }
         [Required]
         [MaxLength(10)]
@@ -108,6 +133,27 @@ namespace Delegate
                 return ValidationResult.Success;
             }
             return new ValidationResult("Invalid age value.");
+        }
+    }
+
+    class MyMaxLengthAttribute : ValidationAttribute
+    {
+        public int MaxLength { get; set; }
+        public MyMaxLengthAttribute(int maxLength)
+        {
+            MaxLength = maxLength;
+        }
+        protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+        {
+            if (value is string str)
+            {
+                if (str.Length > MaxLength)
+                {
+                    return new ValidationResult($"The length of the string must not exceed {MaxLength} characters.");
+                }
+                return ValidationResult.Success;
+            }
+            return new ValidationResult("Invalid string value.");
         }
     }
 
