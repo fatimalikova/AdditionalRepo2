@@ -5,6 +5,8 @@ namespace Delegate
 {
     internal class Program
     {
+        public delegate U Print<T,U>(string w);
+
         public delegate bool NumberMethod(int number);
         static void Main(string[] args)
         {
@@ -27,6 +29,20 @@ namespace Delegate
             //NumberMethod method = IsEven;
             //method += IsOdd;
             //SumOfNumbers(method, 1, 2, 3, 4, 5, 6);
+
+
+            Print<string, int> print = delegate (string w)
+            {
+                Console.WriteLine(w);
+                return w.Length;
+            };
+
+
+            print += (string w) => { Console.WriteLine(w.ToUpper()); return w.Length; };
+            int result = print("Hello, World!");
+            Console.WriteLine("Result: " + result);
+
+
         }
 
        
@@ -83,7 +99,7 @@ namespace Delegate
             return number % 2 == 1;
         }
 
-        public static void SumOfNumbers(NumberMethod method, params int[] numbers)
+        public static void SumOfNumbers(Predicate<int> method, params int[] numbers)
         {
             int sum = 0;
 
