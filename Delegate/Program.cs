@@ -10,16 +10,48 @@ namespace Delegate
         public delegate bool NumberMethod(int number);
         static void Main(string[] args)
         {
+
+
+            List<Employee> employees = new List<Employee>
+            {
+                new Employee { Id = 1, Name = "Alice", Salary = 60000 },
+                new Employee { Id = 2, Name = "Bob", Salary = 45000 },
+                new Employee { Id = 3, Name = "Charlie", Salary = 70000 },
+                new Employee { Id = 4, Name = "Diana", Salary = 30000 }
+            };
+
+            //List<Employee> highEarners = employees.FindAll(e => e.Salary > 50000);
+            //Console.WriteLine("High Earners:");
+            //foreach (var emp in highEarners)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+
+            //List<Employee> NameList  = employees.Where(e => e.Name.StartsWith("A")).ToList().FindAll(e => e.Salary < 70000);
+            //Console.WriteLine("Filtered Employees:");
+            //foreach (var emp in NameList)
+            //{
+            //    Console.WriteLine(emp);
+            //}
+
+
+            IEnumerable<string> NameEmp = employees.Select(e => e.Name).ToList().FindAll(e => e.Length > 3);
+            Console.WriteLine("Employee Names with more than 3 characters:");
+            foreach (var name in NameEmp)
+            {
+                Console.WriteLine(name);
+            }
+
             //SumOfNumbers((s) => s % 2 == 0, 1, 2, 3, 4, 5, 6);
             //SumOfNumbers((s) => s % 2 == 1, 1, 2, 3, 4, 5, 6);
             //SumOfNumbers(delegate (int s) { return s % 2 == 1; },
             //    1, 2, 3, 4, 5, 6);
 
-            SumOfNumbers(s => 
-            {
-                Console.WriteLine("Checking number: " + s);
-                return s % 2 == 0; 
-            }, 1, 2, 3, 4, 5, 6);
+            //SumOfNumbers(s => 
+            //{
+            //    Console.WriteLine("Checking number: " + s);
+            //    return s % 2 == 0; 
+            //}, 1, 2, 3, 4, 5, 6);
 
             //SumOfNumbers(IsOdd, 1, 2, 3, 4, 5, 6);
 
@@ -31,16 +63,38 @@ namespace Delegate
             //SumOfNumbers(method, 1, 2, 3, 4, 5, 6);
 
 
-            Print<string, int> print = delegate (string w)
-            {
-                Console.WriteLine(w);
-                return w.Length;
-            };
+            //Print<string, int> print = delegate (string w)
+            //{
+            //    Console.WriteLine(w);
+            //    return w.Length;
+            //};
 
 
-            print += (string w) => { Console.WriteLine(w.ToUpper()); return w.Length; };
-            int result = print("Hello, World!");
-            Console.WriteLine("Result: " + result);
+            //print += (string w) => { Console.WriteLine(w.ToUpper()); return w.Length; };
+            //int result = print("Hello, World!");
+            //Console.WriteLine("Result: " + result);
+
+            //Action<string> action = (string w) =>
+            //{
+            //    Console.WriteLine(w);
+            //};
+            //Console.WriteLine(action);
+
+            //action += delegate (string w)
+            //{
+            //    Console.WriteLine(w.ToLower());
+            //};
+            //action("Hello, Action Delegate!");
+
+
+            //Predicate<int> predicate = IsEven;
+            //bool isEven = predicate(4);
+            //Console.WriteLine("Is 4 even? " + isEven);
+
+
+            //Func<int, bool> func = IsOdd;
+            //bool isOdd = func(5);
+            //Console.WriteLine("Is 5 odd? " + isOdd);
 
 
         }
@@ -179,6 +233,25 @@ namespace Delegate
             }
             return new ValidationResult("Invalid string value.");
         }
+    }
+
+
+    class Employee
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double Salary { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id: {Id}, Name: {Name}, Salary: {Salary}";
+        }
+        //public Employee(int id, string name, double salary)
+        //{
+        //    Id = id;
+        //    Name = name;
+        //    Salary = salary;
+        //}
     }
 
 }
