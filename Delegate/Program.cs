@@ -9,12 +9,20 @@ namespace Delegate
         static void Main(string[] args)
         {
             //SumOfNumbers((s) => s % 2 == 0, 1, 2, 3, 4, 5, 6);
-            //SumOfNumbers((s) => s % 2 == 1 , 1, 2, 3, 4, 5, 6);
+            //SumOfNumbers((s) => s % 2 == 1, 1, 2, 3, 4, 5, 6);
             //SumOfNumbers(delegate (int s) { return s % 2 == 1; },
             //    1, 2, 3, 4, 5, 6);
 
-            Student student = new Student(1, "Johnathan", "DoeSurnameExceedingMax", 16);
-            Validate(student);
+            SumOfNumbers(s => 
+            {
+                Console.WriteLine("Checking number: " + s);
+                return s % 2 == 0; 
+            }, 1, 2, 3, 4, 5, 6);
+
+            //SumOfNumbers(IsOdd, 1, 2, 3, 4, 5, 6);
+
+            //Student student = new Student(1, "Johnathan", "DoeSurnameExceedingMax", 16);
+            //Validate(student);
 
             //NumberMethod method = IsEven;
             //method += IsOdd;
