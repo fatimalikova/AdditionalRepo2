@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{902E3440-AF48-465D-BCC0-4D0DCCF8C92E}|LIST\\LIST.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{902E3440-AF48-465D-BCC0-4D0DCCF8C92E}|LIST\\LIST.csproj|solutionrelative:list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC26B0FB-1CDE-48EE-AE4A-9A210E1F8997}|Delegate\\Delegate.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\delegate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC26B0FB-1CDE-48EE-AE4A-9A210E1F8997}|Delegate\\Delegate.csproj|solutionrelative:delegate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional3\\Additional3\\DeligatePractice\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{902E3440-AF48-465D-BCC0-4D0DCCF8C92E}|LIST\\LIST.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{902E3440-AF48-465D-BCC0-4D0DCCF8C92E}|LIST\\LIST.csproj|solutionrelative:list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D290125-D4D3-4412-A8A8-6CE3A022EEFD}|Additional2\\Additional2.csproj|c:\\users\\fmeli\\onedrive\\desktop\\code academy\\additional2\\additional2\\additional2\\mysstrlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,11 +41,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional3\\Additional3\\DeligatePractice\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\Additional3\\Additional3\\DeligatePractice\\Program.cs",
@@ -57,28 +57,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Delegate\\Program.cs",
               "RelativeDocumentMoniker": "Delegate\\Program.cs",
               "ToolTip": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\Delegate\\Program.cs",
               "RelativeToolTip": "Delegate\\Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwDcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwDcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-31T10:27:13.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\LIST\\Program.cs",
               "RelativeDocumentMoniker": "LIST\\Program.cs",
               "ToolTip": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\LIST\\Program.cs",
               "RelativeToolTip": "LIST\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T08:42:08.608Z"
+              "WhenOpened": "2025-12-29T08:42:08.608Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
