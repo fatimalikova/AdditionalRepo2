@@ -7,7 +7,7 @@
             Student student1 = new Student(1, "Alice");
             Student student2 = new Student(2, "Bob");
             Schools school = new Schools(56, "Greenwood High");
-            Schools school1 = new Schools(78, "Sunrise Academy");
+            Schools school1 = new Schools(78, "Aviation Academy");
             Schools school2 = new Schools(90, "Riverdale School");
             student1.AddSchool(school);
             student1.AddSchool(school1);
