@@ -41,8 +41,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -75,7 +79,7 @@
               "RelativeDocumentMoniker": "LIST\\Program.cs",
               "ToolTip": "C:\\Users\\fmeli\\OneDrive\\Desktop\\Code Academy\\Additional2\\Additional2\\LIST\\Program.cs",
               "RelativeToolTip": "LIST\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwAkAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAgwHYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-29T08:42:08.608Z",
               "EditorCaption": ""

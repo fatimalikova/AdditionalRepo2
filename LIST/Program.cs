@@ -116,7 +116,7 @@
 
         public void FindStudent(int id)
         {
-            Student student = students.Find(s => s.Id == id);
+            Student? student = students.Find(s => s.Id == id);
             if (student != null)
             {
                 Console.WriteLine("Student found: " + student);
