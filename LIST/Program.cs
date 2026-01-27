@@ -17,6 +17,7 @@
             Console.WriteLine("All students in " + school.Name + ":");
             school.GetAllStudents();
             school.UpdateStudent(1, "Alicia");
+            school.UpdateStudent(3, "Charlie");
 
 
         }
